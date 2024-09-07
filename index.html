@@ -50,26 +50,53 @@
         <hr>
         <section id="menu">
           <h2>Our Menu</h2>
-        <table>
+          <table>
             <caption>Our Tacos</caption>
             <thead>
-                <th>Tacos</th>
-                <th>Qty</th>
-                <th>Price</th>
+                <tr>
+                    <th>Tacos</th>
+                    <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+                    <th scope="col">Price</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th>Crunchy</th>
+                    <th scope="row" rowspan="3">
+                        Crunchy
+                    </th>
                     <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>$1.50</td>
                 </tr>
                 <tr>
-                    <th>Soft</th>
+                    <td>2</td>
+                    <td>$2.50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>$3.25</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="3">
+                        Soft
+                    </th>
+                    <td>1</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>$3.50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>$4.50</td>
                 </tr>
             </tbody>
             <tfoot>
-                <td>Chips & Salsa $2 </td>
+                <tr>
+                    <td colspan="3">
+                        Chips &amp; Salsa $2
+                    </td>
+                </tr>
             </tfoot>
         </table>
         </section>
